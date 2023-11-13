@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% block headersection %}
+<section class="header-container">
+  <img class="profile-image" src="https://raw.githubusercontent.com/SAVIOUR26/SAVIOUR26/main/images/saviour.jpg" alt="" />
+  <h1>Hello there! <br> My Name is Saviour Najuna</h1>
+
+  <div class="content-text">
+    <h2>A Python Developer</h2>
+    <p>
+      Passionate and skilled Python developer with 4 years of experience in 
+      web development, data analysis, and automation. Seeking challenging opportunities
+       with top companies to leverage my expertise in Python, problem-solving, and creative thinking.
+    </p>
+  </div>
+  <a href="#footer" class="btn btn-secondary">Connect With Me</a>
+</section>
+{% endblock %}
+
+{% block body %}
+<section id="projects" class="project-container container">
+  <div id="background-icons"></div>
+  <div class="division"></div>
+
+  <div class="content-text">
+    <h2>Technical Skills</h2>
+    <div class="container">
+      <table style="text-align: center;">
+        <tr>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              
+              <h4>Python Programming</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+             
+              <h4>Web Development</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              
+              <h4>Data Analysis and Data Science</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              
+              <h4>Database Management</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+             
+              <h4>API Development</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+          
+              <h4>Version Control (Git)</h4>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>    
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="project-container container">
+  <div id="background-icons"></div>
+  <div class="division"></div>
+
+  <div class="content-text">
+    <h2>Development Journey</h2>
+    <p>A brief look into the creation and architecture of this website.</p>
+  </div>
+
+  <div class="container">
+    <div class="textcard">
+      <table>
+        <tr>
+          <td>
+            <img src="https://github.com/SAVIOUR26/SAVIOUR26/blob/main/images/Portfolio%20icon.png?raw=true"
+              alt="Development Journey" style="width: 150px; max-width: 150px;">
+          </td>
+          <td>
+            <div class="container">
+              <h3>Flask-Portfolio</h3>
+              <p style="text-align: justify;">This personal portfolio website is a dynamic and responsive platform that showcases my skills, projects, and experiences. It features a clean and user-friendly design with both light and dark themes for optimal user experience. Below, you can find an overview of the technologies used:
+              <br>
+                <strong>Technologies Used:<br>
+                Frontend:<br>
+                HTML: </strong> foundation of the website's structure and content.
+                CSS: Styling the website to create an attractive and visually appealing layout.
+                JS (JavaScript): Enhancing the user experience with interactivity and dynamic content.<br>
+                <strong>Backend:<br>
+                Python:</strong> The primary programming language used for server-side logic and dynamic content generation.
+                sqlite3: A lightweight, serverless database used to store and manage data related to the project, experience, and more.<br>
+                <br><strong>Requirements:</strong>
+                In order to run and deploy this Flask-based portfolio website, you'll need the following Python packages and tools:<br>
+                
+                <strong>flask: The Flask framework for web development.</strong>
+                requests: A library for making HTTP requests to fetch data or interact with APIs.
+                flask-migrate: A Flask extension for database migrations, useful with SQLAlchemy or similar database systems.
+                waitress: A production-quality pure-Python WSGI server.
+                gunicorn: A popular WSGI HTTP server for deploying Python web applications..</p>
+              <a href="https://github.com/SAVIOUR26/Flask-Portfolio" class="btn btn-secondary">View Project <i class="fab fa-github"></i></a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <a href="{{url_for('projects_page')}}" class="btn btn-secondary">See More <i class="fas fa-arrow-right"></i></a>
+</section>
+{% endblock %}
